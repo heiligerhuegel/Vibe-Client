@@ -1,0 +1,25 @@
+.createtrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 100%;
+  height: 600px;
+}
+
+.formfield {
+  width: 100%;
+  display: block;
+}

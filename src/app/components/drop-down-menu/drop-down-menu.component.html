@@ -1,0 +1,31 @@
+<button
+  mat-icon-button
+  color="accent"
+  [matMenuTriggerFor]="menu"
+  #ClickMatMenuTrigger="matMenuTrigger"
+>
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu" xPosition="before">
+  <div (click)="$event.stopPropagation()">
+    <mat-list>
+      <h3 matSubheader>Menu:</h3>
+      <mat-list-item>
+        <button mat-button color="basic" (click)="navigateHome()">
+          Home
+        </button></mat-list-item
+      >
+      <mat-list-item>
+        <button mat-button color="basic" (click)="navigateToNewTripPage()">
+          Create New Trip
+        </button></mat-list-item
+      >
+      <mat-list-item
+        ><button mat-button color="basic" (click)="navigateToAllTripsPage()">
+          All Trips
+        </button></mat-list-item
+      >
+    </mat-list>
+  </div>
+</mat-menu>
